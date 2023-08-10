@@ -125,7 +125,11 @@ elif a == b and b != c or a != b and a == c or c == b and c != a:
 #   for n in range(50):
 
 #EX-5
-
+arr = [0, 1]
+for n in range(2, 50): 
+    arr.append(arr[-1] + arr[-2])
+for idx, a in enumerate(arr):
+  print(f"terms:{idx} / number:{a}")
 
 
 # exercise-06 What's the Season?
